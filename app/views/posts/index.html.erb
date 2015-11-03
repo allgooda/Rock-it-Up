@@ -2,11 +2,14 @@
 
 
 <% @posts.each do |f| %>
- <%= f.user.name %>
+
   <div id='front'>
-    <a href='/posts/<%= f.id %>'>
-      <%= image_tag (f.img_uri) %>
-    </a>
+  <%= f.user.name %>
+    <div id='image'>
+      <a href='/posts/<%= f.id %>'>
+        <img><%= image_tag (f.img_uri) %></img>
+      </a>
+    </div>
     <div>
       <%= f.site_found %>
     </div>
