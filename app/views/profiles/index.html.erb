@@ -1,0 +1,15 @@
+<h1>Hello, <%= current_user.name %></h1>
+
+<h2>These are your posts:</h2>
+<% if current_user.posts.length > 0 %>
+  <ul>
+    <% current_user.posts.each do |f| %>
+    <li>
+      <%= f.description %>
+    </li>
+    <% end %>
+  </ul>
+<% else %>
+  <h3>No posts found!</h3>
+<% end %>
+
