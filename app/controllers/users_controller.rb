@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_action :authenticate, only: [:show, :edit, :update]
+  before_action :authorize, only: [:show, :edit, :update]
+
   def index
     @users = User.all
   end
@@ -27,4 +30,12 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 
+  def authenticate
+    redirect_to new_session_path, alert: 'Not authorized - you must login!' if current_user.nil?
+  end
+
+  def authorize
+    @user = User.find(params[:id])
+    redirect_to root_path if @user != current_user
+  end
 end

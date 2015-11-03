@@ -1,19 +1,17 @@
 <h1>Front Page</h1>
 
+
 <% @posts.each do |f| %>
-
-<h3><%= f.user.name %></h3>
-
-<a href='/posts/<%= f.id %>'>
-<%= image_tag (f.img_uri) %>
-</a>
-  <div>
-    <%= f.site_found %>
+ <%= f.user.name %>
+  <div id='front'>
+    <a href='/posts/<%= f.id %>'>
+      <%= image_tag (f.img_uri) %>
+    </a>
+    <div>
+      <%= f.site_found %>
+    </div>
+    <div>
+      <%= f.description %>
+    </div>
   </div>
-  <div>
-    <%= f.description %>
-  </div>
-
-
-
 <% end %>
