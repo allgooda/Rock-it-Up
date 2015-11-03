@@ -1,0 +1,27 @@
+<h1>New Post!</h1>
+<%= form_for @post do |f| %>
+  <% if @post.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid.</h2>
+      <ul>
+        <% for message in @post.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :site_found %>
+    <%= f.text_field :site_found %>
+  </div>
+  <div class="field">
+    <%= f.label :img_uri %>
+    <%= f.text_field :img_uri %>
+  </div>
+
+  <div class="actions"><%= f.submit %></div>
+<% end %>
