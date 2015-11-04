@@ -30,16 +30,20 @@ class PostsController < ApplicationController
   end
 
   def like
+    post = Post.find(params[:id])
+    if !post.like_instances.where(user_id:current_user.id).empty?
+      redirect_to post_path
+    else
     like = Like.new
     like.user = current_user
 
-    post = Post.find(params[:id])
 
     like.post = post
     like.save
 
     redirect_to post_path
   end
+end
 
 
   # def show
