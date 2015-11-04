@@ -1,4 +1,9 @@
 <%= @post.description %>
-<%= image_tag (@post.img_uri) %>
-<span><button><a style="text-decoration: none" href="/like/<%= @post.id %>">ROCK UP</a></button></span>
 
+<div>
+  <%= image_tag (@post.img_uri) %>
+</div>
+
+
+<button><a style="text-decoration: none" href="/like/<%= @post.id %>">ROCK UP</a></button>
+<p> <%= @post.likes %> People Liked This Rock!</p>
