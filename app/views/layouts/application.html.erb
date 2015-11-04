@@ -7,28 +7,28 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <%= csrf_meta_tags %>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<p>
-  <% if current_user %>
-    Welcome, <%= current_user.name %>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to 'Logout', session_path('dummy'), method: :delete %>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to 'Profile', profiles_path %>
 
-  <% else %>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <%= link_to 'Sign Up', new_user_path %>
-  <% end %>
-</p>
 
-<div class="navbar navbar-inverse navbar-default navbar-fixed-bottom">
-  <div class="container">
-    <a href='/login' class="navbar-btn btn-danger btn pull-right">Login</a>
-  </div>
+  <p>
+    <% if current_user %>
+      Welcome, <%= current_user.name %>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <%= link_to 'Logout', session_path('dummy'), method: :delete %>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <%= link_to 'Profile', profiles_path %>
 
-</div>
+    <% else %>
+
+       <%= link_to 'Login', login_path %>
+       &nbsp;&nbsp;|&nbsp;&nbsp;
+      <%= link_to 'Sign Up', new_user_path %>
+    <% end %>
+  </p>
+
+
 
 <%= yield %>
 

@@ -1,24 +1,33 @@
-<h1>Front Page</h1>
+<body>
+<div class="narrow container">
+
+  <div class="title">
+    <h1>i found a cool rock.</h1>
+    <br>
+    <h3>rock: <br>the solid mineral material forming part of the surface of the earth and other similar planets, exposed on the surface or underlying the soil or oceans...
+    </h3>
+    <button href="/users/new" class="btn-primary btn-block">SIGN UP</button>
+  </div>
+
 
 
 <% @posts.each do |f| %>
+<div class='front'>
 
-  <div id='front'>
+    <%= f.user.name %>
+        <div class='image'>
+          <a href='/posts/<%= f.id %>'>
+            <img><%= image_tag (f.img_uri) %></img>
+          </a>
+        </div>
+        <div>
+          <%= f.site_found %>
+        </div>
+        <div>
+          <%= f.description %>
+        </div>
+      </div>
+  <% end %>
+</div>
 
-<%= f.user.name %>
-    <div id='image'>
-      <a href='/posts/<%= f.id %>'>
-        <img><%= image_tag (f.img_uri) %></img>
-      </a>
-    </div>
-    <div>
-      <%= f.site_found %>
-    </div>
-    <div>
-      <%= f.description %>
-    </div>
-    <div>
-    <%= button_to "Rock it Up!", root_path %>
-    </div>
-  </div>
-<% end %>
+</body>
