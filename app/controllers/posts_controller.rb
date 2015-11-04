@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+
   end
 
   def new
@@ -27,6 +28,20 @@ class PostsController < ApplicationController
       redirect_to root_path
     end
   end
+
+  def like
+    like = Like.new
+    like.user = current_user
+
+    post = Post.find(params[:id])
+
+    like.post = post
+    like.save
+
+    redirect_to post_path
+
+  end
+
 
   # def show
   #   @list = List.find(params[:id])

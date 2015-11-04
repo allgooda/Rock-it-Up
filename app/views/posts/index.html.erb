@@ -4,7 +4,8 @@
 <% @posts.each do |f| %>
 
   <div id='front'>
-  <%= f.user.name %>
+
+<%= f.uploader.name %>
     <div id='image'>
       <a href='/posts/<%= f.id %>'>
         <img><%= image_tag (f.img_uri) %></img>
