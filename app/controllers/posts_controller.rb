@@ -39,7 +39,6 @@ class PostsController < ApplicationController
     like.save
 
     redirect_to post_path
-
   end
 
 
