@@ -1,33 +1,33 @@
 
-<div class="narrow container">
 
   <div class="title">
-    <h1>i found a cool rock.</h1>
+    <h1>Rock it Up</h1>
     <br>
-    <h3>rock: <br>the solid mineral material forming part of the surface of the earth and other similar planets, exposed on the surface or underlying the soil or oceans...
+    <h3 id="definition">rock: <br>the solid mineral material forming part of the surface of the earth and other similar planets, exposed on the surface or underlying the soil or oceans...
     </h3>
-    <button href="/users/new" class="btn-primary btn-block">SIGN UP</button>
+
+    <a href="/users/new">
+      <button class="btn-primary btn-block">SIGN UP</button>
+    </a>
   </div>
 
 
 
-<% @posts.each do |f| %>
-<div class='front'>
+  <% @posts.each do |f| %>
+  <div class='front'>
 
-    <%= f.user.name %>
-        <div class='image'>
-          <a href='/posts/<%= f.id %>'>
-            <img><%= image_tag (f.img_uri) %></img>
-          </a>
-        </div>
-        <div>
-          <%= f.site_found %>
-        </div>
-        <div>
-          <%= f.description %>
-        </div>
-      </div>
+
+    <div class='image'>
+      <a href='/posts/<%= f.id %>'>
+        <img><%= image_tag (f.img_uri) %></img>
+      </a>
+        <h3 id='label'><%= f.user.name %><br><%= f.site_found %></h3>
+    </div>
+    <div>
+      <%= f.description %>
+    </div>
+  </div>
   <% end %>
-</div>
+
 
 

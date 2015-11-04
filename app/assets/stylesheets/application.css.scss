@@ -25,24 +25,17 @@ h1 {
   font-style: bold;
   text-align: center;
 }
-h3 {
+#definition {
   font-style: italic;
 }
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 
 
 .narrow {
-  background: rgba(255, 255, 255, .8);
-  width: 800px;
+  background: rgba(0,0,0,.9);
 
 }
 .front {
-  border: 2px black solid;
-  width: 400px;
+  width: 600px;
   height: 400px;
   margin: 300px auto 0px auto;
 }
