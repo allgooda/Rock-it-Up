@@ -2,17 +2,19 @@
 
 <h2>These are your posts:</h2>
 <% if current_user.posts.length > 0 %>
-    <% current_user.posts.each do |f| %>
+    <% current_user.posts.each do |post| %>
     <div>
       <div id='image'>
-          <img><%= image_tag (f.img_uri) %></img>
+          <img><%= image_tag (post.img_uri) %></img>
       </div>
       <div>
-        <%= f.site_found %>
+        <%= post.site_found %>
       </div>
       <div>
-        <%= f.description %>
+        <%= post.description %>
       </div>
+      <%= button_to "Delete", post_path(post), :method => :delete, data:
+      {:confirm => "Are You Sure You Want to Delete Your Post?"}%>
     </div>
     <% end %>
 

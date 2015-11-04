@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <%= csrf_meta_tags %>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <p>
@@ -22,6 +23,14 @@
     <%= link_to 'Sign Up', new_user_path %>
   <% end %>
 </p>
+
+<div class="navbar navbar-inverse navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <a class="navbar-btn btn-danger btn pull-right">Login</a>
+  </div>
+
+</div>
+
 <%= yield %>
 
 </body>
