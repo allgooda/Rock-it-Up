@@ -4,9 +4,9 @@
   <%= image_tag (@post.img_uri) %>
 </div>
 
-<% if @post.like_instances.where(user_id:current_user.id).empty? %>
-  <button><a style="text-decoration: none" href="/like/<%= @post.id %>">ROCK UP</a></button>
-<% else %>
+<% if @post.like_instances.where(user_id:current_user).length > 0 %>
   <button disabled>ROCK UP</button>
+<% else %>
+  <button><a style="text-decoration: none" href="/like/<%= @post.id %>">ROCK UP</a></button>
 <% end %>
 <p> <%= @post.likes %> People Liked This Rock!</p>

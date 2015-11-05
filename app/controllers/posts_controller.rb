@@ -2,7 +2,6 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
-
   end
 
   def new
@@ -31,7 +30,7 @@ class PostsController < ApplicationController
 
   def like
     post = Post.find(params[:id])
-    if !post.like_instances.where(user_id:current_user.id).empty?
+    if !post.like_instances.where(user_id:current_user).empty?
       redirect_to post_path
     else
     like = Like.new
