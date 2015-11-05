@@ -1,8 +1,6 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 img {
   width: 100%;
   height: 100%;
@@ -13,13 +11,18 @@ h4 {
   padding-left: 12px;
 }
 
-.rock-story {
-  color: white;
-}
-
 p {
   text-indent: 14px;
   width: 550px;
+  text-align: center;
+}
+
+#posts-new:hover {
+  text-decoration: none;
+}
+
+.rock-story {
+  color: white;
 }
 
 .front {
@@ -58,7 +61,6 @@ p {
 #description {
   margin: 12px auto 30px auto;
   background-color: rgba(35,35,35,1);
-
   border-radius: 25px;
   width: 570px;
   height: 200px;

@@ -32,6 +32,12 @@ span {
   word-spacing: 4px;
 }
 
+.login {
+  margin-top: 8px;
+  margin-right: 15%;
+}
+
+
 #logo-rock {
   margin-left: 30%;
   width: 100px;
@@ -43,12 +49,12 @@ span {
 
 }
 
-
-
-
 @media (min-width: 800px) {
   #logo-rock {
-    margin-left: 260%;
+    margin-left: 230%;
+  }
+  .login {
+    margin-right: 20%;
   }
 }
 

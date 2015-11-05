@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :profiles, only:[:index]
   get '/like/:id', to: "posts#like"
   get '/login', to: 'sessions#new'
+  get '/logout', to: 'sessions#destroy'
 end
