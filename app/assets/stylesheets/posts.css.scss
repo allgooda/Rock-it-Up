@@ -8,6 +8,25 @@ img {
   height: 100%;
 }
 
+h4 {
+  padding-top: 20px;
+  padding-left: 12px;
+}
+
+.rock-story {
+  color: white;
+}
+
+p {
+  text-indent: 14px;
+  width: 550px;
+}
+
+.front {
+  width: 600px;
+  margin: 0px auto;
+}
+
 #definition {
   font-style: italic;
   font-size: 18px;
@@ -30,4 +49,17 @@ img {
 .btn-block {
   margin-top: 20px;
   height: 50px;
+}
+.title {
+  margin: 70px auto 20px auto;
+  width: 300px;
+  height: 300px;
+}
+#description {
+  margin: 12px auto 30px auto;
+  background-color: rgba(35,35,35,1);
+
+  border-radius: 25px;
+  width: 570px;
+  height: 200px;
 }

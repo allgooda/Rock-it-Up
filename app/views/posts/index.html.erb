@@ -22,8 +22,10 @@
       </a>
         <h3 id='label'><%= f.user.name %><br><%= f.site_found %></h3>
     </div>
-    <div>
-      <%= f.description %>
+    <div id="description">
+      <h4><span class="rock-story">Rock Story<span><hr></h4>
+
+      <p><span class="rock-story"><%= f.description %></span></p>
     </div>
   </div>
   <% end %>
