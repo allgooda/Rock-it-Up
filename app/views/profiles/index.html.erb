@@ -2,20 +2,18 @@
 
 <h2>These are your posts:</h2>
 <% if current_user.posts.length > 0 %>
+
     <% current_user.posts.each do |post| %>
-    <div>
-      <div id='image'>
-          <img><%= image_tag (post.img_uri) %></img>
-      </div>
-      <div>
-        <%= post.site_found %>
-      </div>
-      <div>
-        <%= post.description %>
-      </div>
-      <%= button_to "Delete", post_path(post), :method => :delete, data:
-      {:confirm => "Are You Sure You Want to Delete Your Post?"}%>
-    </div>
+
+        <div class="col-lg-3 col-sm-4 col-xs-6 card">
+          <a href="/posts/<%= post.id %>" class="thumbnail">
+            <img class="card-img-top" data-src="holder.js/100%x180/"><%= image_tag (post.img_uri) %></img>
+          </a>
+          <div class="card-block">
+            <h4><%= button_to "Delete", post_path(post), :method => :delete, data: {:confirm => "Are You Sure You Want to Delete Your Post?"}%></h4>
+          </div>
+        </div>
+
     <% end %>
 
 <% else %>

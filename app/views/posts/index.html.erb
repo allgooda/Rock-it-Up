@@ -5,19 +5,24 @@
     <h3><span id="definition">rock: <br>the solid mineral material forming part of the surface of the earth and other similar planets, exposed on the surface or underlying the soil or oceans...</span>
     </h3>
 
-  <% if current_user %>
+    <% if current_user %>
 
       <a id="posts-new" href="/posts/new">
         <button class="btn-success btn-block">WELCOME <%= current_user.name %>! <br>POST A ROCK!</button>
       </a>
-    </div>
+
+      <div id="profile-button">
+        <a href="/profiles" class="button outline-white rounded">Profile</a>
+      </div>
+
+  </div>
 
     <% else %>
 
       <a href="/users/new">
         <button class="btn-primary btn-block">SIGN UP</button>
       </a>
-    </div>
+  </div>
   <% end %>
 
 
