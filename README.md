@@ -18,3 +18,11 @@
     Heroku
     Trello
     Sublime Text
+
+
+####Unsolved Problems
+
+-Comment section
+-Report function
+-Geocoding
+-Friending/private messaging
