@@ -7,4 +7,14 @@
   Heroku Link: https://dry-refuge-2833.herokuapp.com/  
   Trello Link: https://trello.com/b/UFdTD2yf/wdi-project-2
 
+####Technologies Used
 
+  Ruby on Rails 4.2.4
+  Ruby 2.2.3p173
+  CSS
+  HTML
+  Javascript
+  Postgresql
+  Heroku
+  Trello
+  Sublime Text
