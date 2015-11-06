@@ -9,6 +9,10 @@
 ![](https://i.imgur.com/Qccdvwr.png)
 
   Trello Link: https://trello.com/b/UFdTD2yf/wdi-project-2
+  
+####User Stories
+
+![](https://i.imgur.com/xTeHYjW.png) ![](https://i.imgur.com/pId50Hp.png) ![](https://i.imgur.com/Nm4k5Zc.png)
 
 ####Technologies Used
 
