@@ -29,8 +29,10 @@
 ####Installation/Startup
 
  - Requires internet browser.
- - User may browse photos from home page.
+ - User may browse photos from home page without being logged in.
  - User can create an account, but must be logged in to an account to creat his/her own posts.
+ - User can like posts and edit the description of a personal post.
+ - User can also delete personal posts from their account page.
 
 ####Unsolved Problems
 
