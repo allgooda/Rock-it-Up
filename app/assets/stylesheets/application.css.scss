@@ -46,8 +46,8 @@ span {
 }
 
 .narrow {
-  background: rgba(0,0,0,.9);
-
+  background: rgba(0,0,0,.85);
+  background-size: auto;
 }
 
 @media (min-width: 800px) {
