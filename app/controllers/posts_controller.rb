@@ -28,6 +28,7 @@ class PostsController < ApplicationController
     end
   end
 
+
   def like
     post = Post.find(params[:id])
     if !post.like_instances.where(user_id:current_user).empty?
@@ -44,10 +45,6 @@ class PostsController < ApplicationController
   end
 end
 
-
-  # def show
-  #   @list = List.find(params[:id])
-  # end
 
   def destroy
    @post = current_user.posts.find(params[:id])

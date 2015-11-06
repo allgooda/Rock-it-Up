@@ -3,10 +3,15 @@
 <div>
   <%= image_tag (@post.img_uri) %>
 </div>
+<div id="description">
+  <h4><span class="rock-story">Rock Story<span><hr></h4>
+  <p class="rock-story"><%= @post.description %></p>
+</div>
 
 <% if @post.like_instances.where(user_id:current_user).length > 0 %>
   <button disabled>ROCK UP</button>
 <% else %>
   <button><a style="text-decoration: none" href="/like/<%= @post.id %>">ROCK UP</a></button>
+  <button><a style="text-decoration: none" hret="/edit/<%= @post.id %>">EDIT</a></button>
 <% end %>
 <p> <%= @post.likes %> People Liked This Rock!</p>
