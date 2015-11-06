@@ -22,6 +22,11 @@
     Trello
     Sublime Text
 
+####Installation/Startup
+
+ - Requires internet browser.
+ - User may browse photos from home page.
+ - User can create an account, but must be logged in to an account to creat his/her own posts.
 
 ####Unsolved Problems
 
