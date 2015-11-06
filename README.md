@@ -22,7 +22,7 @@
 
 ####Unsolved Problems
 
--Comment section
--Report function
--Geocoding
--Friending/private messaging
+- Comment section 
+- Report function 
+- Geocoding 
+- Friending/private messaging 
