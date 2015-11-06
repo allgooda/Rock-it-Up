@@ -30,7 +30,4 @@
 
 ####Unsolved Problems
 
-- Comment section 
-- Report function 
-- Geocoding 
-- Friending/private messaging 
+![](https://i.imgur.com/ry980Ht.png)
