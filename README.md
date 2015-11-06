@@ -1,7 +1,6 @@
-== README
+== ROCK IT UP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Rock it up as a web app designed for lovers of the world, outdoors, the environment and more specifically rocks. It is used to share and upload pictures of rocks from around the globe.
 
 Things you may want to cover:
 
