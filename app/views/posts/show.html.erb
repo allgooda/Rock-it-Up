@@ -1,12 +1,19 @@
 <%= @post.description %>
+<div class="front">
+  <div class='image'>
+    <a href='/posts/<%= @post.id %>'>
+      <img><%= image_tag (@post.img_uri) %></img>
+    </a>
+      <h3 id='label'><%= @post.user.name %><br><%= @post.site_found %></h3>
+  </div>
+  <div id="description">
+    <h4><span class="rock-story">Rock Story<span><hr></h4>
 
+    <p class="rock-story"><%= @post.description %></p>
+  </div>
 <div>
-  <%= image_tag (@post.img_uri) %>
-</div>
-<div id="description">
-  <h4><span class="rock-story">Rock Story<span><hr></h4>
-  <p class="rock-story"><%= @post.description %></p>
-</div>
+
+
 
 <% if @post.like_instances.where(user_id:current_user).length > 0 %>
   <button disabled>ROCK UP</button>
