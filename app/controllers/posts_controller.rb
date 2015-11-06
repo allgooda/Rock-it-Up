@@ -45,12 +45,28 @@ class PostsController < ApplicationController
   end
 end
 
+def edit
+  @post = Post.find(params[:id])
+end
 
-  def destroy
-   @post = current_user.posts.find(params[:id])
-   @post.destroy
-   redirect_to profiles_path
+def update
+  @post = Post.find(params[:id])
+
+  respond_to do |format|
+    if @post.update(post_params)
+      format.html { redirect_to post_path, notice: 'Description Updated'}
+    else
+      format.html {render :edit}
+    end
   end
+end
+
+
+def destroy
+ @post = current_user.posts.find(params[:id])
+ @post.destroy
+ redirect_to profiles_path
+end
 
 
   private

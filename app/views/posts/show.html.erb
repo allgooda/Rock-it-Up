@@ -12,6 +12,11 @@
   <button disabled>ROCK UP</button>
 <% else %>
   <button><a style="text-decoration: none" href="/like/<%= @post.id %>">ROCK UP</a></button>
-  <button><a style="text-decoration: none" hret="/edit/<%= @post.id %>">EDIT</a></button>
+<% end %>
+
+<% if current_user && @post.user_id == current_user.id %>
+  <button><%= link_to "EDIT", edit_post_path(@post) %></button>
+<% else %>
+  <button disabled>EDIT</button>
 <% end %>
 <p> <%= @post.likes %> People Liked This Rock!</p>

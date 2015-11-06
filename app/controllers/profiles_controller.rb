@@ -10,5 +10,6 @@ class ProfilesController < ApplicationController
       @post_ids << like.post_id
     end
   end
+
 end
 
