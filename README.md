@@ -4,11 +4,11 @@
 
 ![](https://i.imgur.com/n5V9OY5.jpg)
 
-  ![Heroku] (https://lit-shelf-7991.herokuapp.com/)
+  [Heroku] (https://lit-shelf-7991.herokuapp.com/)
   
 ![](https://i.imgur.com/Qccdvwr.png)
 
-  ![TRELLO] (https://trello.com/b/UFdTD2yf/wdi-project-2)
+  [TRELLO] (https://trello.com/b/UFdTD2yf/wdi-project-2)
   
 ####User Stories
 
