@@ -1,14 +1,14 @@
-# ROCK IT UP
+# [ROCK IT UP] (https://lit-shelf-7991.herokuapp.com/)
 
-####Rock it up is a web app designed for lovers of the world, outdoors, the environment and more specifically rocks. It is used to share and upload pictures of rocks from around the globe. Non-rock pics not allowed!
+####Rock it up is a web app designed for lovers of the world, the outdoors, the environment and more specifically rocks. It is used to share and upload pictures of rocks from around the globe. Non-rock pics not allowed!
 
 ![](https://i.imgur.com/n5V9OY5.jpg)
 
-  Heroku Link: https://lit-shelf-7991.herokuapp.com/
+  ![Heroku] (https://lit-shelf-7991.herokuapp.com/)
   
 ![](https://i.imgur.com/Qccdvwr.png)
 
-  Trello Link: https://trello.com/b/UFdTD2yf/wdi-project-2
+  ![TRELLO] (https://trello.com/b/UFdTD2yf/wdi-project-2)
   
 ####User Stories
 
@@ -16,15 +16,11 @@
 
 ####Technologies Used
 
-    Ruby on Rails 4.2.4
-    Ruby 2.2.3p173
-    CSS
-    HTML
-    Javascript
-    Postgresql
-    Heroku
-    Trello
-    Sublime Text
+Design/GUI | Languages/Development | Database| Deployment/Other
+---|---|---|
+CSS|Ruby|Postgresql|Sublime Text
+HTML5|Ruby on Rails|ActiveRecord|Trello
+BootStrap|Javascript|Heroku
 
 ####Installation/Startup
 
