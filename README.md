@@ -16,11 +16,11 @@
 
 ####Technologies Used
 
-Design/GUI | Languages/Development | Database| Deployment/Other
+Design/GUI | Languages/Development | Database | Deployment/Other
 ---|---|---|
-CSS|Ruby|Postgresql|Sublime Text
-HTML5|Ruby on Rails|ActiveRecord|Trello
-BootStrap|Javascript|Heroku
+CSS | Ruby | Postgresql | Sublime Text
+HTML5 | Ruby on Rails | ActiveRecord | Trello
+BootStrap | Javascript | Heroku
 
 ####Installation/Startup
 
